@@ -8,7 +8,7 @@ $font-statistics: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   font-family: $font-statistics;
 }
-
+// HEADER
 header {
   .top-banner {
     background: #121a2e;
@@ -20,16 +20,16 @@ header {
   .header-links {
     display: flex;
     column-gap: 5em;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     background-color: #fff;
     height: 85px; // header height
-    padding-left: $start-point;
+    // padding-left: $start-point;
 
     > ul {
       display: flex;
       flex-direction: row;
-      column-gap: 2rem;
+      column-gap: 2.7rem;
       margin: 0;
       li {
         display: flex;
@@ -88,6 +88,7 @@ header {
   }
 }
 
+// HERO SECTION
 .hero {
   height: 100vh;
   max-height: 850px;
@@ -124,12 +125,14 @@ header {
   }
 }
 
+// STATISTICS SECTION
 .statistics {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2em;
   background-color: #fff;
+  z-index: 2;
 
   > ul {
       display: flex;
@@ -177,3 +180,75 @@ header {
     }
 }
 
+// ABOUT SECTION
+.about-us {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 600px;
+
+  .comb {
+    position: relative;
+    height: 600px;
+    
+    .back {
+      .wrapper {
+        clip-path: polygon(
+          47.5% 5.66987%,
+          48.2899% 5.30154%,
+          49.13176% 5.07596%,
+          50% 5%,
+          50.86824% 5.07596%,
+          51.7101% 5.30154%,
+          52.5% 5.66987%,
+          87.14102% 25.66987%,
+          87.85495% 26.16978%,
+          88.47124% 26.78606%,
+          88.97114% 27.5%,
+          89.33948% 28.2899%,
+          89.56505% 29.13176%,
+          89.64102% 30%,
+          89.64102% 70%,
+          89.56505% 70.86824%,
+          89.33948% 71.7101%,
+          88.97114% 72.5%,
+          88.47124% 73.21394%,
+          87.85495% 73.83022%,
+          87.14102% 74.33013%,
+          52.5% 94.33013%,
+          51.7101% 94.69846%,
+          50.86824% 94.92404%,
+          50% 95%,
+          49.13176% 94.92404%,
+          48.2899% 94.69846%,
+          47.5% 94.33013%,
+          12.85898% 74.33013%,
+          12.14505% 73.83022%,
+          11.52876% 73.21394%,
+          11.02886% 72.5%,
+          10.66052% 71.7101%,
+          10.43495% 70.86824%,
+          10.35898% 70%,
+          10.35898% 30%,
+          10.43495% 29.13176%,
+          10.66052% 28.2899%,
+          11.02886% 27.5%,
+          11.52876% 26.78606%,
+          12.14505% 26.16978%,
+          12.85898% 25.66987%
+      );
+        img {
+          width: 450px;
+          height: 450px;
+        }
+      }
+    }
+
+    .play-button {
+      position: absolute;
+      left: 50%;
+      top: 35%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}
