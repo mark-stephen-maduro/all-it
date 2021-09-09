@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
+$start-point: 15%;
+
 * {
   padding: 0;
   margin: 0;
@@ -16,10 +18,12 @@ header {
 
   .header-links {
     display: flex;
-    justify-content: center;
+    column-gap: 5em;
+    justify-content: start;
     align-items: center;
-    background-color: red;
-    height: 85px;
+    background-color: #fff;
+    height: 85px; // header height
+    padding-left: $start-point;
 
     > ul {
       display: flex;
@@ -33,7 +37,90 @@ header {
         list-style-type: none;
         font-size: 0.85rem;
         font-weight: 400;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .header-actions {
+      display: flex;
+      column-gap: 2em;
+      align-items: center;
+      .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        &:hover {
+          cursor: pointer;
+        }
+
+        .phone-icon {
+          color: #4EAB4C;
+          transform: rotate(-45deg);
+        }
+
+        .label {
+          font-size: 11px;
+          font-weight: 400;
+          color: gray;
+        }
+
+        .tel {
+          font-size: 14px;
+          font-weight: 600;
+          color: black;
+        }
+      }
+
+      .btn {
+        font-size: 14px;
+        border: none;
+        border-radius: 35px;
+        padding: 1em 2em;
+        width: fit-content;
+        background-color: #1E60AC;
       }
     }
   }
 }
+
+.hero {
+  height: 100vh;
+  max-height: 850px;
+  // background-image: url('https://data2.1freewallpapers.com/detail/tablet-smart-phone-hi-tech.jpg');
+  background-color: rgb(21, 30, 54);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 15%;
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5em;
+    width: 500px;
+
+    h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    .btn {
+      margin-top: 2em;
+      border: none;
+      border-radius: 35px;
+      padding: 1em 3em;
+      width: fit-content;
+      background-color: #4EAB4C;
+    }
+  }
+}
+
