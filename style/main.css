@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header .top-banner {
@@ -54,7 +53,7 @@ header .header-links > ul li {
           align-items: center;
   list-style-type: none;
   font-size: 0.85rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 header .header-links > ul li:hover {
@@ -150,7 +149,6 @@ header .header-links .header-actions .btn {
 }
 
 .hero .description h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
   font-size: 3rem;
   color: #fff;
@@ -165,5 +163,86 @@ header .header-links .header-actions .btn {
   width: -moz-fit-content;
   width: fit-content;
   background-color: #4EAB4C;
+}
+
+.statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+  background-color: #fff;
+}
+
+.statistics > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  margin: 0;
+}
+
+.statistics > ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  font-size: 0.85rem;
+  font-weight: 400;
+  padding: 0 2em;
+  max-width: 300px;
+}
+
+.statistics > ul li:not(:last-child) {
+  border-right: 2px solid #DBDBDB;
+}
+
+.statistics > ul li:hover {
+  cursor: pointer;
+}
+
+.statistics > ul li .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.statistics > ul li .stats .number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4070A7;
+}
+
+.statistics > ul li .stats .label {
+  font-size: 1rem;
+  font-weight: 600;
+  word-wrap: break-word;
 }
 /*# sourceMappingURL=main.css.map */
