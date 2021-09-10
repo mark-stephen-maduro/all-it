@@ -1,7 +1,7 @@
 // @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 $start-point: 15%;
-$font-statistics: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-statistics: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 * {
   padding: 0;
@@ -59,7 +59,7 @@ header {
         }
 
         .phone-icon {
-          color: #4EAB4C;
+          color: #4eab4c;
           transform: rotate(-45deg);
         }
 
@@ -82,7 +82,7 @@ header {
         border-radius: 35px;
         padding: 1em 2em;
         width: fit-content;
-        background-color: #1E60AC;
+        background-color: #1e60ac;
       }
     }
   }
@@ -105,7 +105,7 @@ header {
   .description {
     display: flex;
     flex-direction: column;
-    row-gap: .5em;
+    row-gap: 0.5em;
     width: 500px;
 
     h1 {
@@ -120,7 +120,7 @@ header {
       border-radius: 35px;
       padding: 1em 3em;
       width: fit-content;
-      background-color: #4EAB4C;
+      background-color: #4eab4c;
     }
   }
 }
@@ -135,62 +135,66 @@ header {
   z-index: 2;
 
   > ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    margin: 0;
+    li {
       display: flex;
-      flex-direction: row;
-      column-gap: 2rem;
-      margin: 0;
-      li {
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      font-size: 0.85rem;
+      font-weight: 400;
+      padding: 0 2em;
+      max-width: 300px;
+
+      &:not(:last-child) {
+        border-right: 2px solid #dbdbdb;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .stats {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        list-style-type: none;
-        font-size: 0.85rem;
-        font-weight: 400;
-        padding: 0 2em;
-        max-width: 300px;
+        text-align: center;
 
-        &:not(:last-child) {
-          border-right: 2px solid #DBDBDB;
+        .number {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #4070a7;
         }
 
-        &:hover {
-          cursor: pointer;
-        }
-
-        .stats {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-
-          .number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #4070A7;
-          }
-
-          .label {
-            font-size: 1rem;
-            font-weight: 600;
-            word-wrap: break-word;
-          }
+        .label {
+          font-size: 1rem;
+          font-weight: 600;
+          word-wrap: break-word;
         }
       }
     }
+  }
 }
 
 // ABOUT SECTION
 .about-us {
+  position: relative;
   display: flex;
   align-items: center;
-  overflow: hidden;
   height: 600px;
+
+  padding-right: $start-point;
+  overflow: hidden;
 
   .comb {
     position: relative;
-    height: 600px;
-    
+    height: 800px;
+    margin-top: -250px;
+
     .back {
       .wrapper {
         clip-path: polygon(
@@ -236,19 +240,42 @@ header {
           11.52876% 26.78606%,
           12.14505% 26.16978%,
           12.85898% 25.66987%
-      );
+        );
         img {
-          width: 450px;
-          height: 450px;
+          width: 900px;
+          height: 800px;
         }
       }
     }
 
-    .play-button {
-      position: absolute;
-      left: 50%;
-      top: 35%;
-      transform: translate(-50%,-50%);
+    .overlay-btn {
+      .play-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 51%;
+        top: 54%;
+        transform: translate(-50%, -50%);
+        color: #4eab4c;
+        font-size: 1.5rem;
+        background-color: white;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+      }
+    }
+  }
+
+  .about-company {
+    .btn {
+      margin-top: 2em;
+      border: none;
+      border-radius: 35px;
+      padding: 1em 2em;
+      width: fit-content;
+      font-weight: 500;
+      background-color: #1e60ac;
     }
   }
 }
