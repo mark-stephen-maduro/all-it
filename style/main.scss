@@ -20,11 +20,11 @@ header {
   .header-links {
     display: flex;
     column-gap: 5em;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #fff;
     height: 85px; // header height
-    // padding-left: $start-point;
+    padding: 0 $start-point;
 
     > ul {
       display: flex;
@@ -100,7 +100,7 @@ header {
   display: flex;
   justify-content: start;
   align-items: center;
-  padding-left: 15%;
+  padding: 0 $start-point;
 
   .description {
     display: flex;
@@ -187,7 +187,7 @@ header {
   align-items: center;
   height: 600px;
 
-  padding-right: $start-point;
+  padding: 0 $start-point;
   overflow: hidden;
 
   .comb {
@@ -242,7 +242,7 @@ header {
           12.85898% 25.66987%
         );
         img {
-          width: 900px;
+          width: 800px;
           height: 800px;
         }
       }
